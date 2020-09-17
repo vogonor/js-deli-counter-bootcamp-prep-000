@@ -38,23 +38,27 @@ function currentLine(currentLineOfPeople) {
      var message = ""
      var myMessage = "" 
      const stringArr = []
-    
-         for (var i = 0; i < currentLineOfPeople.length; i++){
-             if( currentLineOfPeople.length === 0){
+          if( currentLineOfPeople.length === 0){
                message = "The line is currently empty."
-        
-              } else {
+               return message
+              
+          } else {
+              for (var i = 0; i < currentLineOfPeople.length; i++){
+             
                 peopleStr = `${i+1}. ${currentLineOfPeople[i]}`
                 stringArr.push(peopleStr)
               
               }
-         }
+              
               var myArrayStr = stringArr.join(", ")
               message = `The line is currently: ${myArrayStr}`
+              return message
+          }
+              
          // stringArr.unshift(message)
     
         //   var lastStr =  `${message} ${myListStr}`
         // var lastStr = myListStr.replace(",", " ")
         // var thisStr = message.replace("currently:,","currently:")
-        return message
+        // return message
   }
