@@ -46,7 +46,7 @@ function currentLine(currentLineOfPeople) {
               } else {
                 peopleStr = `${i+1}. ${currentLineOfPeople[i]}`
                 stringArr.push(peopleStr)
-                message ="The line is currently:"
+              
               }
          }
               var myArrayStr = stringArr.join(", ")
