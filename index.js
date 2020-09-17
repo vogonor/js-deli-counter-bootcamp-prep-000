@@ -44,17 +44,17 @@ function currentLine(currentLineOfPeople) {
                message = "The line is currently empty."
         
               } else {
-            peopleStr = `${i+1}. ${currentLineOfPeople[i]}`
-            stringArr.push(peopleStr)
-            // message ="The line is currently:"
-        }
-    
-        var myArrayStr = stringArr.join(", ")
-         message = `The line is currently: ${myArrayStr}`
+                peopleStr = `${i+1}. ${currentLineOfPeople[i]}`
+                stringArr.push(peopleStr)
+                message ="The line is currently:"
+              }
+         }
+              var myArrayStr = stringArr.join(", ")
+              message = `The line is currently: ${myArrayStr}`
          // stringArr.unshift(message)
     
-   //   var lastStr =  `${message} ${myListStr}`
-   // var lastStr = myListStr.replace(",", " ")
-    // var thisStr = message.replace("currently:,","currently:")
-     return message
- }
+        //   var lastStr =  `${message} ${myListStr}`
+        // var lastStr = myListStr.replace(",", " ")
+        // var thisStr = message.replace("currently:,","currently:")
+        return message
+  }
